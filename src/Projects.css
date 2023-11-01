@@ -1,0 +1,127 @@
+.projects {
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    margin-bottom: 3vh;
+    font-size: 4rem;
+}
+
+.pro-images {
+    object-fit: contain;
+    width: 100%;
+    flex: 9;
+}
+
+.projects-container {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-cont {
+    width: 18rem;
+    height: 25rem;
+    background-color: rgb(27, 19, 19);
+    border-radius: 30px;
+    border: 1px white solid;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.pro-name {
+    flex: 1;
+    text-align: center;
+    background-color: orangered;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 0 0 30px 30px;
+}
+
+.pro-text {
+    visibility: hidden;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    background-color: rgba(255, 68, 0, 0.5);
+    border-radius: 30px;
+    transition: visibility 75ms ease-in-out;
+}
+
+.project-cont:hover {
+    transition: transform 75ms ease-in-out;
+    border-bottom: 1px white solid;
+    transform: scale(1.1);
+}
+
+.project-cont:hover .pro-images {
+    opacity: 0.3;
+}
+
+.project-cont:hover .pro-name {
+    visibility: hidden;
+}
+
+.project-cont:hover .pro-text {
+    visibility: visible;
+}
+
+.pro-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.pro-btn {
+    width: fit-content;
+    height: auto;
+    border: none;
+    border-radius: 2rem;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    text-align: center;
+    cursor: pointer;
+    display: inline;
+    align-self: center;
+    margin: 5vw auto;
+}
+
+@media (max-width: 600px) {
+    .project-cont  {
+        min-width: 50vw;
+    }
+}
+
+@media (max-width: 1233px) {
+    .projects {
+        height: fit-content;
+    }
+    .pro-text {
+        overflow: scroll; 
+    }
+}
