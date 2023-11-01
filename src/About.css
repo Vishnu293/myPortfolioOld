@@ -1,12 +1,75 @@
 .aboutContainer {
-    height: 100vh;
+    height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 85%;
-    text-align: center;
     margin: 0 auto;
     padding: 2rem;
 }
 
 .about {
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
+    font-size: 4rem;
+}
+
+.skills {
+    margin: 3vh 0;
+    font-size: 3rem;
+}
+
+.skillslist {
+    max-width: 75%;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.skl {
+    margin: 0.5vh;
+    flex: 1 1 0px;
+    flex-basis: 33.33%;
+    max-width: 25%;
+    min-width: 30vw;
+    height: 8vh;
+    padding: 1vh;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2vh;
+    border: 1px orangered solid;
+    border-radius: 10px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2.5rem;
+}
+
+.stars {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .skl {
+        min-width: 50vw;
+    }
+}
+
+.skl:hover {
+    background-color: orangered;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    transform: scale(0.95);
+}
+
+@media (max-width: 1233px) {
+    .aboutContainer {
+        height: fit-content;
+    }
 }

@@ -1,28 +1,39 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import logo from './VA1.png'
 import './Navbar.css'
 
 const Navbar = () => {
-  const scrollToComponent = (id) => {
+  const scrollToComponent = (id, offset=0) => {
     const element = document.getElementById(id);
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
+    
+    if (element) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
   
   return (
+    <div className='navbar-cont'>
     <div className='navbar'>
-        <img src={logo} alt='logo' className='logo'/>
+        <img src={logo} alt='logo' className='logo' onClick={() => scrollToComponent('Home',100)}/>
         <div className='menu'>
-          <a className='menuitems'>Home</a>
-          <a className='menuitems' onClick={() => scrollToComponent('About')}>About</a>
-          <a className='menuitems' onClick={() => scrollToComponent('Home')}>Projects</a>
-          <a className='menuitems' onClick={() => scrollToComponent('Home')}>Achievements</a>
+          <a className='menuitems' onMouseOver={() => scrollToComponent('Home',100)}>Home</a>
+          <a className='menuitems' onMouseOver={() => scrollToComponent('About',50)}>About</a>
+          <a className='menuitems' onMouseOver={() => scrollToComponent('Projects',50)}>Projects</a>
+          <a className='menuitems' onMouseOver={() => scrollToComponent('Certify',50)}>Certifications</a>
         </div>
         <div class="hamburger" id="hamburger">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <button className='btn'>Contact Me</button>
+        <button className='btn' onClick={() => scrollToComponent('Contact')}>Contact Me</button>
+    </div>
     </div>
   )
 }

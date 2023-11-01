@@ -1,3 +1,12 @@
+.navbar-cont {
+    width: 100%;
+    background-color: rgb(27, 19, 19);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px -5px 10px 5px black;
+}
+
 .navbar {
     width: 100vw;
     height: 6rem;
@@ -8,8 +17,6 @@
     align-items: center;
     padding: 1rem;
     overflow: hidden;
-    position: sticky;
-    z-index: 1;
 }
 
 .logo {
@@ -60,3 +67,8 @@
 
 /* For Mobile Devices: 320px - 480px
 For Tablets or iPad: 480px - 768px */
+
+.menuitems:hover {
+    color: orangered;
+    transition: color 0.3s ease-in-out;
+} 

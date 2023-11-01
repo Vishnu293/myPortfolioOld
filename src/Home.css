@@ -1,4 +1,5 @@
 .home {
+    font-weight: bold;
     width: 100vw;
     max-width: 85%;
     overflow: hidden;
@@ -25,6 +26,11 @@ span {
     margin: 1rem;
     text-align: center;
     font-size: 1rem;
+    font-weight: normal;
+}
+
+a {
+    color: white;
 }
 
 .btn1 {
