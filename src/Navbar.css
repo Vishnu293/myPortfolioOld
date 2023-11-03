@@ -21,7 +21,7 @@
 }
 
 .logo {
-    height: 3rem;
+    height: 5vh;
     width: auto;
     cursor: pointer;
 }
@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 850px) {
+@media screen and (min-width: 480px) and (max-width: 900px) {
     .menu {
         display: none;
     }
@@ -81,8 +81,8 @@ For Tablets or iPad: 480px - 768px */
 .hb-menu {
     position: absolute;
     right: 0;
-    width: 40px;
-    height: 50px;
+    width: 8vw;
+    height: 5vh;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -90,11 +90,12 @@ For Tablets or iPad: 480px - 768px */
     cursor: pointer;
     margin: 0 10px;
     gap: 5px;
+    outline: none;
 }
 
 .bar {
-    width: 50px;
-    height: 5px;
+    width: 8vw;
+    height: 0.5vh;
     background-color: orangered;
     position: relative;
     border-radius: 10px;
@@ -102,7 +103,7 @@ For Tablets or iPad: 480px - 768px */
 }
 
 .hbmenu {
-    width: 30%;
+    width: fit-content;
     height: 100vh;
     background-color:rgb(27, 19, 19);
     position: absolute;
@@ -131,7 +132,7 @@ For Tablets or iPad: 480px - 768px */
     transition: 0.15s ease-in-out;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .visible {
         display: flex;
     }
