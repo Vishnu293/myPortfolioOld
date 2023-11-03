@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vishnu_portfolio/static/css/main.46f86965.css",
+    "main.js": "/vishnu_portfolio/static/js/main.599ef0b8.js",
+    "static/js/787.4da5d4fb.chunk.js": "/vishnu_portfolio/static/js/787.4da5d4fb.chunk.js",
+    "static/media/fa-solid-900.ttf": "/vishnu_portfolio/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/vishnu_portfolio/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/resumeCVN.pdf": "/vishnu_portfolio/static/media/resumeCVN.ec5c8f6bc4ac5b52593a.pdf",
+    "static/media/fa-solid-900.woff2": "/vishnu_portfolio/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/vishnu_portfolio/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/vishnu_portfolio/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/VA1.png": "/vishnu_portfolio/static/media/VA1.66a29046e08003b8c49c.png",
+    "static/media/fa-regular-400.woff2": "/vishnu_portfolio/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/vishnu_portfolio/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/vishnu_portfolio/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/vishnu_portfolio/index.html",
+    "main.46f86965.css.map": "/vishnu_portfolio/static/css/main.46f86965.css.map",
+    "main.599ef0b8.js.map": "/vishnu_portfolio/static/js/main.599ef0b8.js.map",
+    "787.4da5d4fb.chunk.js.map": "/vishnu_portfolio/static/js/787.4da5d4fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46f86965.css",
+    "static/js/main.599ef0b8.js"
+  ]
+}
