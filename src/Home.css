@@ -72,3 +72,7 @@ a {
         font-size: 1rem;
     }
 }
+
+.btn1:active {
+    background-color: transparent;
+}

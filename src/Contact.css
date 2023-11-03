@@ -81,7 +81,7 @@ textarea {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    gap: 1rem;
+    gap: 0.5rem;
     position: relative;
     top: 25px;
 }
@@ -97,7 +97,6 @@ textarea {
     transition: all 75ms ease-in-out;
     transform: scale(1.1);
 }
-
 
 @media screen and (max-width:900px) {
     .cont-container {
@@ -126,5 +125,15 @@ textarea {
 @media screen and (max-width:1200px) {
     .contact {
         height: fit-content;
+    }
+}
+
+.submit-btn:active {
+    background-color: transparent;
+}
+
+@media (max-width: 490px) {
+    .contact-me {
+        font-size: 2.5rem;
     }
 }

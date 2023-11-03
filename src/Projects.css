@@ -124,4 +124,13 @@
     .pro-text {
         overflow: scroll; 
     }
+    .pro-text::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    .project {
+        font-size: 2.5rem;
+    }
 }
