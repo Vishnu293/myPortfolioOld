@@ -2,7 +2,7 @@
   "name": "vishnu_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vishnu293.github.io/vishnu_portfolio/",
+  "homepage": "https://vishnu293.github.io/vishnu_portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
