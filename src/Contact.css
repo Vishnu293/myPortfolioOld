@@ -138,3 +138,9 @@ textarea {
         font-size: 2.5rem;
     }
 }
+
+@media screen and (max-width:600px) {
+    .cont-container {
+        max-width: 100%;
+    }
+}
