@@ -67,3 +67,9 @@ tr, td {
         height: fit-content;
     }
 }
+
+@media (max-width: 490px) {
+    .certifications {
+        font-size: 2.5rem;
+    }
+}

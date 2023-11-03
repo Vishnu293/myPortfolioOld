@@ -17,6 +17,7 @@
     align-items: center;
     padding: 1rem;
     overflow: hidden;
+    position: relative;
 }
 
 .logo {
@@ -48,7 +49,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .menuitems {
+    .menu {
         display: none;
     }
     .btn {
@@ -56,8 +57,8 @@
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .menuitems {
+@media screen and (min-width: 480px) and (max-width: 850px) {
+    .menu {
         display: none;
     }
     .btn {
@@ -72,3 +73,72 @@ For Tablets or iPad: 480px - 768px */
     color: orangered;
     transition: color 0.3s ease-in-out;
 } 
+
+.btn:active {
+    background-color: transparent;
+}
+
+.hb-menu {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    gap: 5px;
+}
+
+.bar {
+    width: 50px;
+    height: 5px;
+    background-color: orangered;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hbmenu {
+    width: 30%;
+    height: 100vh;
+    background-color:rgb(27, 19, 19);
+    position: absolute;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    text-align: right;
+    overflow-x: hidden;
+}
+
+.bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.15s ease-in-out;
+}
+
+.bar.clicked:nth-child(1) {
+    width: 40px;
+    transform: rotate(45deg) translate(9px, 8px);
+    transition: 0.15s ease-in-out;
+}
+
+.bar.clicked:nth-child(3) {
+    width: 40px;
+    transform: rotate(-45deg) translate(6px, -5px);
+    transition: 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+    .visible {
+        display: flex;
+    }
+    .hb-menu {
+        display: flex;
+    }
+    .hidden {
+        display: none;
+    }
+}
