@@ -51,7 +51,7 @@ a {
 
 @media screen and (max-width: 480px) {
     .home {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .cont {
         font-size: 2rem;
