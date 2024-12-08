@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! I am Vishnu, a passionate web developer specializing in frontend technologies. This portfolio showcases my projects, skills, and background.
 
-### Website Link: [My Portfolio](https://vishnu293.github.io/vishnu_portfolio/)
+### Website Link: [My Portfolio](https://vishnu293.github.io/myPortfolioOld/)
 Thank you for visiting my portfolio!
 
 ---
