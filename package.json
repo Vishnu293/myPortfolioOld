@@ -52,6 +52,9 @@
     "svgo": "2.8.2",
     "underscore": "1.13.8",
     "serialize-javascript": "7.0.3",
-    "webpack-dev-server": "5.2.1"
+    "webpack-dev-server": "5.2.1",
+    "@tootallnate/once": "3.0.1",
+    "on-headers": "1.1.0",
+    "compression": "1.8.1"
   }
 }
